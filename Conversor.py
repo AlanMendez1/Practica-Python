@@ -1,5 +1,5 @@
 menu = """
-Bienvenido al conversor de monedas!!! 🌍
+Bienvenido al conversor de monedas!!!
 
 1 - Pesos Colombianos
 2 - Pesos Argentinos
