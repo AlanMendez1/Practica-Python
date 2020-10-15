@@ -7,36 +7,23 @@ Bienvenido al conversor de monedas!!!
 
 Elige una opción: """
 
+def conversor(tipo_pesos, valor_dolar):
+    pesos = input("Cuántos " + tipo_pesos + " tienes?: ")
+    pesos = float(pesos)
+    NAME = input("Escriba su nombre: ")
+    dolares = pesos / valor_dolar
+    dolares = round(dolares, 2)
+    dolares = str(dolares)
+    print(NAME + ", " + "tienes $" + dolares + " USD")
+
+
 opcion = int(input(menu))
 
 if opcion == 1:
-
-    COP = input("Inserte COP ")
-    NAME = input("Escriba su nombre: ")
-    COP = float(COP)
-    USDprecio = 3700
-    USD = COP / USDprecio
-    USD = round(USD,2)
-    USD = str(USD)
-    print(NAME + ", " + "tienes $" + USD + " USD")
+    conversor("COP", 3700)
 elif opcion == 2:
-    ARS = input("Inserte ARS ")
-    NAME = input("Escriba su nombre: ")
-    ARS = float(ARS)
-    USDprecio = 77
-    USD = ARS / USDprecio
-    USD = round(USD,2)
-    USD = str(USD)
-    print(NAME + ", " + "tienes $" + USD + " USD")
-
+    conversor("ARS", 77)
 elif opcion == 3:
-    MXN = input("Inserte MXN ")
-    NAME = input("Escriba su nombre: ")
-    MXN = float(MXN)
-    USDprecio = 21
-    USD = MXN / USDprecio
-    USD = round(USD,2)
-    USD = str(USD)
-    print(NAME + ", " + "tienes $" + USD + " USD")
+    conversor("MXN", 21)
 else:
     print("¡Ingresa una opción correcta!")
